@@ -1,0 +1,398 @@
+@import '../includes/_fonts';
+
+@font-face {
+	font-family: "Raleway";
+	src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Raleway Bold";
+	src: url('../fonts/Raleway-Bold.ttf');
+}
+
+.fontNormal {
+	-webkit-font-smoothing: antialiased;
+	font-family: Raleway, helvetica, arial;
+}
+
+.fontBold {
+	-webkit-font-smoothing: antialiased;
+	font-family: Raleway, helvetica, arial;
+}
+
+h1{
+	@extend .fontNormal;
+	font-size: 1.5em;
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+	text-align: center;
+
+//	@include mobile{
+//		font-size: 2.5em;
+//		line-height: 42px;
+//		margin-bottom: 5px;
+//	}
+}
+
+p{
+	@extend .fontNormal;
+	font-size: 2em;
+	line-height: 2em;
+	margin-bottom: 20px;
+
+	@include mobile{
+		font-size: 1.2em;
+		line-height: 25px;
+		margin-bottom: 11px;
+	}
+}
+
+ol li{
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+	list-style-type: decimal;
+	margin-left: 20px;
+}
+
+
+.DefaultTypography {
+	font-size: 15px;
+	@extend .fontNormal;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+	color: $textColour;
+
+	@include mobile{
+		font-size: 12px;
+	}
+}
+
+body, html{
+	@extend .DefaultTypography;
+	background-color: $appBackground;
+}
+
+
+.container{
+
+}
+
+.content-section{
+	padding-left: 2.5em;
+	padding-right: 3.5em;
+	overflow: scroll;
+	margin-right: -15px;
+	height: 100%;
+
+	.content-filler{
+		height: 100px;
+	}
+
+	&.full-width{
+		padding-left: 0;
+		padding-right: 0;
+		overflow: scroll;
+		margin-right: -15px;
+	}
+}
+
+.question-image{
+	width:100%;
+	border-bottom: 2px solid white;
+	height: auto;
+	img{
+		width: 100%;
+		display: block;
+	}
+}
+
+.question-caption{
+	@extend .fontBold;
+	font-size: 1.6em;
+	padding: .5em 2em .5em 2em;
+	text-align: center;
+	line-height: 1.3em;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+}
+
+.question-text{
+	font-size: 1.2em;
+	font-weight: lighter;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+
+.answer-box{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding: 1em 5em;
+	margin-top: 1.5em;
+
+	.answer{
+		&.no{
+			float:left;
+		}
+
+		&.yes{
+			float:right;
+		}
+
+		span{
+			display: block;
+			text-align: center;
+			font-size: 1.3em;
+			padding-top: .5em;
+				color: white;
+		}
+	}
+
+	.answer{
+		a{
+			height: 77px;
+			display: block;
+			width: 76px;
+
+			&.no-answer{
+				background : {
+					image: url(../img/btn_no@3x.png);
+					repeat: no-repeat;
+					size: 76px 77px;
+				}
+
+				&:active{
+					background : {
+						image: url(../img/btn_no_active@3x.png);
+					}
+				}
+
+				&.chosen{
+					background : {
+						image: url(../img/btn_no_selected@3x.png);
+					}
+
+					&:active{
+						background : {
+							image: url(../img/btn_no_active@3x.png);
+						}
+					}
+				}
+			}
+
+			&.yes-answer{
+				background : {
+					image: url(../img/btn_yes@3x.png);
+					repeat: no-repeat;
+					size: 76px 77px;
+				}
+
+				&:active{
+					background : {
+						image: url(../img/icn_yes_active@3x.png);
+					}
+				}
+
+				&.chosen{
+					background : {
+						image: url(../img/icn_yes_selected@3x.png);
+					}
+
+					&:active{
+						background : {
+							image: url(../img/icn_yes_active@3x.png);
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.result-text{
+	font-size: 1.6em;
+	padding: 1.3em 4em 0 4em;
+	text-align: center;
+}
+
+.result-image{
+	img{
+		width: 100%;
+		padding: 1em 6em 0 6em;
+	}
+}
+
+.result-description{
+	p{
+		font-size: 1.1em;
+		line-height: 1.4em;
+		padding: 0 1.5em;
+		color: white;
+
+		strong{
+			font-weight: bold;
+		}
+	}
+
+	ul{
+		li{
+			font-size: 1em;
+			line-height: 1.5em;
+			margin-bottom: 1em;
+			list-style-type: disc;
+			margin-left: 35px;
+		}
+	}
+
+	span{
+		padding: 0 1.7em;
+		a{
+			font-size: 1.2em;
+			color:white;
+		}
+	}
+}
+
+.contact-block{
+	margin-top: 1.5em;
+	span{
+		display: block;
+		text-align: center;
+		padding-bottom: .5em;
+	}
+}
+
+.phone-number{
+	bottom: 0;
+	height: 6.5em;
+	text-align: center;
+	width: 100%;
+	padding: 0 0 1em 0;
+
+	.btn-white{
+		line-height: 3em;
+		font-size: 1.5em;
+		a{
+			color: $buttonText;
+		}
+	}
+}
+
+.back-button{
+	display:inline-block;
+	position: absolute;
+	width: 4em;
+	margin-left: 1em;
+	margin-top: 1em;
+
+	img{
+		width: 100%;
+	}
+}
+
+
+.btn-white{
+	background-color: $textBackground;
+	color: $buttonText;
+	@include border-radius($rounded-corner-amount, $rounded-corner-amount);
+	line-height: 2em;
+	height: $button-height;
+	display: inline-block;
+	padding: 0 20px;
+	width: 90%;
+
+	&:active{
+		color: $buttonText;
+		opacity: 0.6;
+	}
+
+	&.question-info{
+		background-color: transparent;
+		color: #fff;
+		border: 1px solid #fff;
+
+		&:active{
+			opacity: 0.3;
+		}
+	}
+
+}
+
+.lightbox{
+	display:none;
+}
+
+.PopTitle{
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.PopFooter{
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	display: block;
+}
+
+.featherlight .featherlight-content{
+	height: 80%;
+	padding: 0;
+	background-color: $appBackground;
+	position: relative;
+
+	@include box-sizing(border-box);
+
+	p{
+		color: white;
+	}
+
+	.popup-title{
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: center;
+		padding: .5em;
+		position: fixed;
+		width: 100%;
+		background-color: $appBackground;
+	}
+
+	.popup-container{
+		padding: 3.5em 2em;
+
+		@include box-sizing(border-box);
+	}
+
+	.inner-ol{
+		padding-top:1em;
+		li{
+			list-style-type: lower-alpha;
+			font-size:1em;
+		}
+	}
+
+}
+
+.custom-close-icon{
+	font-family: Arial, sans serif;
+	font-size: 1.5em;
+	color: white;
+	margin-top: 5px;
+	margin-right: 27px;
+	background: none;
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+.featherlight .featherlight-close{
+	display: none;
+}
