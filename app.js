@@ -99,7 +99,7 @@ route();
                                         score_response = 'Very likely to have an AFB infection'
                                         score_message = "<p>In this case it is recommended that you burn the hive and report the outbreak.<br/> Instructions on how to do this can be found on the AFB Management Agency website.</p>";
                                         score_message += "<span><a href='' class='open-browser'>www.bee.crowna.co.nz</a></span>";
-                                        score_image += "<img src='img/jollibee_sadbee.png'>";
+                                        score_image += "<img src='img/negative_result.png'>";
                                 } else {
                                         score_response = 'Unlikely to have AFB'
                                         score_message =  "<p><strong>You now have a number of options available to you. You could:</strong></p>";
@@ -111,7 +111,7 @@ route();
                                         score_message += "<li>You could quarantine the hives and associated equipment for up to 18 months to ensure that an infection is not present at a “subclinical” level.</li>";
                                         score_message += "<li>You could introduce a management plan that incorporates one or more of the suggestions above.</li>";
                                         score_message += "</ul>";
-                                        score_image += "<img src='img/jollibee_happybee.png'>";
+                                        score_image += "<img src='img/positive_result.png'>";
                                 }
 
                                 self.find(".result-text").text(score_response);

@@ -317,7 +317,6 @@ body, html {
   padding-left: 2.5em;
   padding-right: 3.5em;
   overflow: scroll;
-  margin-right: -15px;
   height: 100%;
 }
 .content-section .content-filler {
@@ -326,8 +325,7 @@ body, html {
 .content-section.full-width {
   padding-left: 0;
   padding-right: 0;
-  overflow: scroll;
-  margin-right: -15px;
+  overflow: hidden;
 }
 
 .question-image {
@@ -360,7 +358,8 @@ body, html {
   display: block;
   width: 100%;
   overflow: hidden;
-  padding: 1em 5em;
+  padding: 1em 5.5em 1em 5em;
+  padding-right: 6.5em;
   margin-top: 1.5em;
 }
 .answer-box .answer.no {
@@ -475,6 +474,7 @@ body, html {
   width: 4em;
   margin-left: 1em;
   margin-top: 1em;
+  z-index: 99999;
 }
 .back-button img {
   width: 100%;
@@ -523,14 +523,22 @@ body, html {
   display: block;
 }
 
+.featherlight {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .featherlight .featherlight-content {
   height: 80%;
   padding: 0;
   background-color: #fcb831;
-  position: relative;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  z-index: 9999;
+  zoom: 1;
 }
 .featherlight .featherlight-content p {
   color: white;
@@ -577,6 +585,11 @@ body, html {
   display: none;
 }
 
+.content-section-holder {
+  overflow: hidden;
+  height: 100%;
+}
+
 header {
   height: 25px;
   background-color: #e89920;
@@ -586,7 +599,7 @@ section.footer {
   background-color: #f7ac39;
   bottom: 0;
   height: 6.5em;
-  position: fixed;
+  position: absolute;
   text-align: center;
   width: 100%;
   padding: 1em 0;
@@ -598,7 +611,7 @@ section.footer .footer-button {
 
 section.above-footer {
   bottom: 7em;
-  position: fixed;
+  position: absolute;
   width: 100%;
   text-align: center;
   height: 4em;
@@ -619,7 +632,7 @@ section.above-footer a.show-popup:after {
 }
 .hero-image img {
   width: 100%;
-  padding: 0 80px;
+  padding: 0 40px;
 }
 
 .hero-text {

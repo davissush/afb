@@ -92,7 +92,6 @@ body, html{
 	padding-left: 2.5em;
 	padding-right: 3.5em;
 	overflow: scroll;
-	margin-right: -15px;
 	height: 100%;
 
 	.content-filler{
@@ -102,8 +101,7 @@ body, html{
 	&.full-width{
 		padding-left: 0;
 		padding-right: 0;
-		overflow: scroll;
-		margin-right: -15px;
+		overflow: hidden;
 	}
 }
 
@@ -138,7 +136,8 @@ body, html{
 	display: block;
 	width: 100%;
 	overflow: hidden;
-	padding: 1em 5em;
+	padding: 1em 5.5em 1em 5em;
+	padding-right: 6.5em;
 	margin-top: 1.5em;
 
 	.answer{
@@ -296,6 +295,7 @@ body, html{
 	width: 4em;
 	margin-left: 1em;
 	margin-top: 1em;
+	z-index: 99999;
 
 	img{
 		width: 100%;
@@ -348,13 +348,22 @@ body, html{
 	display: block;
 }
 
+.featherlight{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
 .featherlight .featherlight-content{
 	height: 80%;
 	padding: 0;
 	background-color: $appBackground;
-	position: relative;
-
-	@include box-sizing(border-box);
+	z-index:9999;
+	zoom:1;
 
 	p{
 		color: white;
@@ -404,4 +413,9 @@ body, html{
 
 .featherlight .featherlight-close{
 	display: none;
+}
+
+.content-section-holder{
+	overflow: hidden;
+	height: 100%;
 }
