@@ -18,6 +18,7 @@ $('.back-button').entwine({
         }
 });
 
+
 function renderpage(page){
         $.ajax({
                 type: 'GET',
@@ -96,12 +97,12 @@ route();
                                 var score_image = "";
 
                                 if(parseInt(totalscore)  >= 30){
-                                        score_response = 'Very likely to have an AFB infection'
+                                        score_response = "<span class='negative-stats'>Very likely</span> to have an AFB infection";
                                         score_message = "<p>In this case it is recommended that you burn the hive and report the outbreak.<br/> Instructions on how to do this can be found on the AFB Management Agency website.</p>";
                                         score_message += "<span><a href='' class='open-browser'>www.bee.crowna.co.nz</a></span>";
                                         score_image += "<img src='img/negative_result.png'>";
                                 } else {
-                                        score_response = 'Unlikely to have AFB'
+                                        score_response = "<span class='positive-stats'>Unlikely</span> to have AFB";
                                         score_message =  "<p><strong>You now have a number of options available to you. You could:</strong></p>";
                                         score_message += "<ul>";
                                         score_message += "<li>Do nothing (not recommended unless you know what has caused the symptoms you observed).</li>";
@@ -114,7 +115,7 @@ route();
                                         score_image += "<img src='img/positive_result.png'>";
                                 }
 
-                                self.find(".result-text").text(score_response);
+                                self.find(".result-text").html(score_response);
                                 self.find(".result-description").html(score_message);
                                 self.find(".result-image").html(score_image);
 
@@ -196,11 +197,18 @@ route();
                                         "</div>" +
                                         "</div>";
 
+//                                var popupContent = "<div>" +
+//                                        "<p>This application was funded by the Management Agency, American Foulbrood National Pest Management Paln, to assist New Zealand beekeepers in the eradication of American Foulbrood.</p>" +
+//                                        "<p>The Application was created for the Management Agency by Brice Horner (BSc), Apiculture Tutor, Otago.</p>" +
+//                                        "<p>Photos were generously provided by Frank Lindsay (Lindsay's Apiaries) and Brice Horner.</p>" +
+//                                        "<p>Rex Baynes<br/>(Manager AFB, NPMP)</p>" +
+//                                        "<div class='PopFooter'>Supported by Sush Mobile</div>" +
+//                                        "</div>";
+
                                 $.featherlight(popupContent, {
                                         closeOnClick: false
                                 });
 
-                                $(this).featherlight()
 
                         }
                 });
@@ -221,8 +229,6 @@ route();
                                 var gidindx = "q"+qid+"s";
 
                                 var answer = window.localStorage.getItem(gidindx);
-
-                                console.log(answer);
 
                                 if(answer == 1){
                                         self.find('.no-answer').removeClass('chosen');
@@ -248,8 +254,6 @@ route();
 
                                 var self = this;
 
-                                console.log('The score is: ' + self.totalScore());
-
                                 var infonum = $(this).data('questionnum');
 
                                 var info1 = "<div>" +
@@ -271,6 +275,7 @@ route();
                                         "       <li>The cap can easily be removed by scraping it away with your hive tool or a dry grass stalk.</li>" +
                                         "       <li>Once exposed the larva needs to be closely examined (return to the main App for instructions on how to do this and what to look for).</li>" +
                                         "    </ol>" +
+                                        "    <div class='PopFooter'></div>" +
                                         "  </div>" +
                                         "</div>";
 
@@ -288,6 +293,7 @@ route();
                                         "     <li>Once exposed the larva needs to be closely examined (return to the main App for instructions on how to do this and what to look for).</li>" +
                                         "     <li>Closely examine any larva that appears to have died and “collapsed” on to the bottom wall of the cell.  Dead larva can range from white to coffee brown in colour.</li>" +
                                         "  </ol>" +
+                                        "  <div class='PopFooter'></div>" +
                                         "</div>" +
                                         "</div>";
 
@@ -303,6 +309,7 @@ route();
                                         "     <li>If the tissue roped out between 10-30mm then the test was positive.</li>" +
                                         "     <li>The body tissue of AFB infected larva often “ropes out” then “snaps back”.</li>" +
                                         "  </ol>" +
+                                        "  <div class='PopFooter'></div>" +
                                         "</div>" +
                                         "</div>";
 
@@ -318,6 +325,7 @@ route();
                                         "     <li>Look for the thin hair like structure that is the remains of the tongue in pupal scale.</li>" +
                                         "     <li>The red stick in the photo below is inserted in a cell and shows the correct angle between eye and frame.</li>" +
                                         "  </ol>" +
+                                        "  <div class='PopFooter'></div>" +
                                         "</div>" +
                                         "</div>";
 

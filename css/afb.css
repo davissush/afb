@@ -269,7 +269,7 @@ table {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
   text-align: center;
@@ -348,7 +348,7 @@ body, html {
 }
 
 .question-text {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: lighter;
   text-align: center;
   letter-spacing: 0.02em;
@@ -358,8 +358,7 @@ body, html {
   display: block;
   width: 100%;
   overflow: hidden;
-  padding: 1em 5.5em 1em 5em;
-  padding-right: 6.5em;
+  padding: 1em 5em 1em 5em;
   margin-top: 1.5em;
 }
 .answer-box .answer.no {
@@ -411,8 +410,17 @@ body, html {
 
 .result-text {
   font-size: 1.6em;
-  padding: 1.3em 4em 0 4em;
+  padding: 1.2em 4em 0 4em;
   text-align: center;
+  font-weight: bold;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+.result-text .negative-stats {
+  color: red;
+}
+.result-text .positive-stats {
+  color: green;
 }
 
 .result-image img {
@@ -420,9 +428,12 @@ body, html {
   padding: 1em 6em 0 6em;
 }
 
+.result-description {
+  font-size: 1.2em;
+}
 .result-description p {
-  font-size: 1.1em;
-  line-height: 1.4em;
+  font-size: 1em;
+  line-height: 1.25em;
   padding: 0 1.5em;
   color: white;
 }
@@ -440,14 +451,16 @@ body, html {
   padding: 0 1.7em;
 }
 .result-description span a {
-  font-size: 1.2em;
+  font-size: 1.25em;
   color: white;
+  font-weight: bold;
 }
 
 .contact-block {
   margin-top: 1.5em;
 }
 .contact-block span {
+  font-size: 1.2em;
   display: block;
   text-align: center;
   padding-bottom: .5em;
@@ -471,10 +484,16 @@ body, html {
 .back-button {
   display: inline-block;
   position: absolute;
-  width: 4em;
+  width: 3em;
+  height: 3em;
   margin-left: 1em;
   margin-top: 1em;
   z-index: 99999;
+  background-size: 100% 100%;
+  background-image: url(../img/backbutton.png);
+}
+.back-button:active {
+  opacity: 0.6;
 }
 .back-button img {
   width: 100%;
@@ -502,7 +521,7 @@ body, html {
   border: 1px solid #fff;
 }
 .btn-white.question-info:active {
-  opacity: 0.3;
+  background-color: #f8ba5b;
 }
 
 .lightbox {
@@ -521,6 +540,7 @@ body, html {
   font-size: 1em;
   text-align: center;
   display: block;
+  margin-bottom: 100px;
 }
 
 .featherlight {
@@ -539,21 +559,30 @@ body, html {
   background-color: #fcb831;
   z-index: 9999;
   zoom: 1;
+  overflow: hidden;
+}
+.featherlight .featherlight-content .featherlight-inner {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
 }
 .featherlight .featherlight-content p {
   color: white;
+  line-height: 1.4em;
 }
 .featherlight .featherlight-content .popup-title {
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
-  padding: .5em;
-  position: fixed;
+  padding: 1em .5em 1em .5em;
+  position: relative;
   width: 100%;
   background-color: #fcb831;
 }
 .featherlight .featherlight-content .popup-container {
-  padding: 3.5em 2em;
+  padding: 0 2em;
+  overflow: scroll;
+  height: 100%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -570,15 +599,13 @@ body, html {
   font-family: Arial, sans serif;
   font-size: 1.5em;
   color: white;
-  margin-top: 5px;
-  margin-right: 27px;
   background: none;
   position: absolute;
   z-index: 9999;
-  top: 0;
-  right: 0;
   display: inline-block;
   cursor: pointer;
+  top: .5em;
+  right: .5em;
 }
 
 .featherlight .featherlight-close {
