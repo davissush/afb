@@ -25,13 +25,13 @@
 -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.mathysmedical"
+        id        = "com.afb"
         version   = "1.0.0">
 
-    <name>Mathys RM Surgeon App for IOS</name>
+    <name>AFB App IOS</name>
 
     <description>
-        A hybrid app for Mathys
+        A hybrid app for AFB - IOS
     </description>
 
     <author href="http://www.sushmobile.co.nz" email="davis.dimalen@gmail.com">
