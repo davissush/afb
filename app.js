@@ -12,9 +12,9 @@ $(window).on('hashchange', route);
 $('.back-button').entwine({
         onclick: function(e){
                 e.preventDefault();
-                parent.history.back();
-
-                $('.featherlight-close-icon.featherlight-close').trigger('click');
+				$('.featherlight-close-icon.featherlight-close').trigger('click');
+				
+                parent.history.back();               
         }
 });
 
