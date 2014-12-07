@@ -90,9 +90,8 @@ route();
                 $('.question-image').entwine({
                         onclick: function(){
                                 var imgfile = $(this).data('imgfile');
-                                var img_path = cordova.file.applicationDirectory+'www/img/' + imgfile;
-
-                                window.open(img_path, '_system', '');
+                                var img_path = 'file:///android_asset/www/img/' + imgfile;
+							    window.open(img_path, '_system', '');
                         }
                 });
 
