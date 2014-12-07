@@ -7,19 +7,6 @@ document.addEventListener("backbutton", function(e){
         navigator.app.backHistory();
 }, false);
 
-document.addEventListener('deviceready', function() {
-        window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
-        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
-}, false);
-
-function gotFS(fileSystem) {
-        //console.log(fileSystem.root.fullPath);
-
-        alert(fileSystem.root.fullPath);
-
-        window.rootFS = fileSystem.root;
-}
-
 var slider = new PageSlider($("#container"));
 var spinner = $("#spinner");
 
@@ -108,14 +95,17 @@ route();
                 $('.question-image').entwine({
                         onclick: function(){
                                 var imgfile = $(this).data('imgfile');
-                                console.log(imgfile);
-                                var img_path_root = cordova.file.applicationDirectory;
-                                var img_path = cordova.file.applicationDirectory+'www/img/' + imgfile;
 
-                                this.showAlert(rootFS.fullPath, 'Test');
-                                this.showAlert(img_path, 'Test');
+                                var ppath = window.location.pathname;
+                                var img_path = path.substring(0,ppath.lastIndexOf('/')+1);
 
-                                window.open(img_path, '_system', '');
+                                this.showAlert(ppath, 'test');
+                                this.showAlert(img_path, 'test');
+
+                                var resource = img_path + "/img/"+ imgfile;
+
+
+                                window.open(resource, '_system', '');
                         }
                 });
 
