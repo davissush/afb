@@ -3,9 +3,8 @@ window.addEventListener('load', function () {
 }, false);
 
 document.addEventListener("backbutton", function(e){
-        //navigator.app.backHistory()
-        alert('test-back');
         $('.featherlight-close-icon.featherlight-close').trigger('click');
+        navigator.app.backHistory();
 }, false);
 
 document.addEventListener('deviceready', function() {
