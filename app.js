@@ -2,10 +2,23 @@ window.addEventListener('load', function () {
         new FastClick(document.body);
 }, false);
 
-window.addEventListener("backbutton", function(e){
+document.addEventListener("backbutton", function(e){
         //navigator.app.backHistory()
         $('.featherlight-close-icon.featherlight-close').trigger('click');
 }, false);
+
+document.addEventListener('deviceready', function() {
+        window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+}, false);
+
+function gotFS(fileSystem) {
+        //console.log(fileSystem.root.fullPath);
+
+        alert(fileSystem.root.fullPath);
+        
+        window.rootFS = fileSystem.root;
+}
 
 var slider = new PageSlider($("#container"));
 var spinner = $("#spinner");
