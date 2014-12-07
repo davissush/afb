@@ -4,6 +4,7 @@ window.addEventListener('load', function () {
 
 document.addEventListener("backbutton", function(e){
         //navigator.app.backHistory()
+        alert('test-back');
         $('.featherlight-close-icon.featherlight-close').trigger('click');
 }, false);
 
@@ -16,7 +17,7 @@ function gotFS(fileSystem) {
         //console.log(fileSystem.root.fullPath);
 
         alert(fileSystem.root.fullPath);
-        
+
         window.rootFS = fileSystem.root;
 }
 
@@ -112,7 +113,7 @@ route();
                                 var img_path_root = cordova.file.applicationDirectory;
                                 var img_path = cordova.file.applicationDirectory+'www/img/' + imgfile;
 
-                                this.showAlert(img_path_root, 'Test');
+                                this.showAlert(rootFS.fullPath, 'Test');
                                 this.showAlert(img_path, 'Test');
 
                                 window.open(img_path, '_system', '');
