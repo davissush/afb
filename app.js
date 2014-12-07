@@ -100,6 +100,7 @@ route();
                                 var img_path = cordova.file.applicationDirectory+'www/img/' + imgfile;
 
                                 this.showAlert(img_path_root, 'Test');
+                                this.showAlert(img_path, 'Test');
 
                                 window.open(img_path, '_system', '');
                         }
