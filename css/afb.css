@@ -380,32 +380,32 @@ body, html {
   width: 76px;
 }
 .answer-box .answer a.no-answer {
-  background-image: url(../img/btn_no@3x.png);
+  background-image: url(../img/btn_no.png);
   background-repeat: no-repeat;
   background-size: 76px 77px;
 }
 .answer-box .answer a.no-answer:active {
-  background-image: url(../img/btn_no_active@3x.png);
+  background-image: url(../img/btn_no_active.png);
 }
 .answer-box .answer a.no-answer.chosen {
-  background-image: url(../img/btn_no_selected@3x.png);
+  background-image: url(../img/btn_no_selected.png);
 }
 .answer-box .answer a.no-answer.chosen:active {
-  background-image: url(../img/btn_no_active@3x.png);
+  background-image: url(../img/btn_no_active.png);
 }
 .answer-box .answer a.yes-answer {
-  background-image: url(../img/btn_yes@3x.png);
+  background-image: url(../img/btn_yes.png);
   background-repeat: no-repeat;
   background-size: 76px 77px;
 }
 .answer-box .answer a.yes-answer:active {
-  background-image: url(../img/icn_yes_active@3x.png);
+  background-image: url(../img/btn_yes_active.png);
 }
 .answer-box .answer a.yes-answer.chosen {
-  background-image: url(../img/icn_yes_selected@3x.png);
+  background-image: url(../img/btn_yes_selected.png);
 }
 .answer-box .answer a.yes-answer.chosen:active {
-  background-image: url(../img/icn_yes_active@3x.png);
+  background-image: url(../img/btn_yes_active.png);
 }
 
 .result-text {
@@ -646,8 +646,13 @@ section.above-footer {
 }
 section.above-footer a.show-popup {
   padding: 10px;
+  padding-right: 20px;
   font-size: 1.5em;
   color: white;
+  background-image: url(../img/icn_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 13px;
 }
 section.above-footer a.show-popup:after {
   color: white;

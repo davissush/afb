@@ -2,6 +2,11 @@ window.addEventListener('load', function () {
         new FastClick(document.body);
 }, false);
 
+window.addEventListener("backbutton", function(e){
+        //navigator.app.backHistory()
+        $('.featherlight-close-icon.featherlight-close').trigger('click');
+}, false);
+
 var slider = new PageSlider($("#container"));
 var spinner = $("#spinner");
 
@@ -12,9 +17,9 @@ $(window).on('hashchange', route);
 $('.back-button').entwine({
         onclick: function(e){
                 e.preventDefault();
-				$('.featherlight-close-icon.featherlight-close').trigger('click');
-				
-                parent.history.back();               
+                parent.history.back();
+
+                $('.featherlight-close-icon.featherlight-close').trigger('click');
         }
 });
 
@@ -90,8 +95,13 @@ route();
                 $('.question-image').entwine({
                         onclick: function(){
                                 var imgfile = $(this).data('imgfile');
-                                var img_path = 'file:///android_asset/www/img/' + imgfile;
-							    window.open(img_path, '_system', '');
+                                console.log(imgfile);
+                                var img_path_root = cordova.file.applicationDirectory;
+                                var img_path = cordova.file.applicationDirectory+'www/img/' + imgfile;
+
+                                this.showAlert(img_path_root, 'Test');
+
+                                window.open(img_path, '_system', '');
                         }
                 });
 
@@ -205,19 +215,9 @@ route();
                                         "</div>" +
                                         "</div>";
 
-//                                var popupContent = "<div>" +
-//                                        "<p>This application was funded by the Management Agency, American Foulbrood National Pest Management Paln, to assist New Zealand beekeepers in the eradication of American Foulbrood.</p>" +
-//                                        "<p>The Application was created for the Management Agency by Brice Horner (BSc), Apiculture Tutor, Otago.</p>" +
-//                                        "<p>Photos were generously provided by Frank Lindsay (Lindsay's Apiaries) and Brice Horner.</p>" +
-//                                        "<p>Rex Baynes<br/>(Manager AFB, NPMP)</p>" +
-//                                        "<div class='PopFooter'>Supported by Sush Mobile</div>" +
-//                                        "</div>";
-
                                 $.featherlight(popupContent, {
                                         closeOnClick: false
                                 });
-
-
                         }
                 });
 

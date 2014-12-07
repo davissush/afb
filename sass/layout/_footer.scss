@@ -23,8 +23,15 @@ section.above-footer{
 
 	a.show-popup{
 		padding: 10px;
+		padding-right: 20px;
 		font-size: 1.5em;
 		color: white;
+		background: {
+			image: url(../img/icn_arrow.png);
+			repeat: no-repeat;
+			position: right center;
+			size: 13px;
+		}
 
 		&:hover{
 //			background-color: gray;

@@ -165,25 +165,25 @@ body, html{
 
 			&.no-answer{
 				background : {
-					image: url(../img/btn_no@3x.png);
+					image: url(../img/btn_no.png);
 					repeat: no-repeat;
 					size: 76px 77px;
 				}
 
 				&:active{
 					background : {
-						image: url(../img/btn_no_active@3x.png);
+						image: url(../img/btn_no_active.png);
 					}
 				}
 
 				&.chosen{
 					background : {
-						image: url(../img/btn_no_selected@3x.png);
+						image: url(../img/btn_no_selected.png);
 					}
 
 					&:active{
 						background : {
-							image: url(../img/btn_no_active@3x.png);
+							image: url(../img/btn_no_active.png);
 						}
 					}
 				}
@@ -191,25 +191,25 @@ body, html{
 
 			&.yes-answer{
 				background : {
-					image: url(../img/btn_yes@3x.png);
+					image: url(../img/btn_yes.png);
 					repeat: no-repeat;
 					size: 76px 77px;
 				}
 
 				&:active{
 					background : {
-						image: url(../img/icn_yes_active@3x.png);
+						image: url(../img/btn_yes_active.png);
 					}
 				}
 
 				&.chosen{
 					background : {
-						image: url(../img/icn_yes_selected@3x.png);
+						image: url(../img/btn_yes_selected.png);
 					}
 
 					&:active{
 						background : {
-							image: url(../img/icn_yes_active@3x.png);
+							image: url(../img/btn_yes_active.png);
 						}
 					}
 				}
