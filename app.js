@@ -96,16 +96,7 @@ route();
                         onclick: function(){
                                 var imgfile = $(this).data('imgfile');
 
-                                var ppath = window.location.pathname;
-                                var img_path = path.substring(0,ppath.lastIndexOf('/')+1);
-
-                                this.showAlert(ppath, 'test');
-                                this.showAlert(img_path, 'test');
-
-                                var resource = img_path + "/img/"+ imgfile;
-
-
-                                window.open(resource, '_system', '');
+                                window.open('.img/'+imgfile, '_system', '');
                         }
                 });
 
