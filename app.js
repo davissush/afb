@@ -110,7 +110,6 @@ route();
                                var imgfile = $(this).data('imgfile');
 
                                var popupImage = "<div>" +
-                                       "<div class='fcontrol'><span class='magnify plus'>+</span> <span class='magnify minus'>-</span></div>" +
                                        "<div class='finner'>" +
                                        "   <img src='img/" + imgfile + "'>" +
                                        "</div>" +
@@ -121,27 +120,27 @@ route();
                                         namespace: 'featherlight-image',
                                         closeOnClick: false
                                 });
+
+                                $('.featherlight-image-content').append("<div class='fcontrol'><span class='magnify plus'>+</span> <span class='magnify minus'>-</span></div>");
                         }
                 });
 
 
                 $('.magnify.plus').entwine({
                         onclick: function(e){
-                               var imgwidth = this.closest('.featherlight-image-inner').find('img').width();
+                               var imgwidth = this.closest('.featherlight-image-content').find('.featherlight-image-inner img').width();
+                               imgwidth+=20;
 
-                                imgwidth+=20;
-
-                                this.closest('.featherlight-image-inner').find('img').width(imgwidth);
+                               this.closest('.featherlight-image-content').find('.featherlight-image-inner img').width(imgwidth);
                         }
                 });
 
                 $('.magnify.minus').entwine({
                         onclick: function(e){
-                                var imgwidth = this.closest('.featherlight-image-inner').find('img').width();
-
+                                var imgwidth = this.closest('.featherlight-image-content').find('.featherlight-image-inner img').width();
                                 imgwidth-=20;
 
-                                this.closest('.featherlight-image-inner').find('img').width(imgwidth);
+                                this.closest('.featherlight-image-content').find('.featherlight-image-inner img').width(imgwidth);
                         }
                 });
 
