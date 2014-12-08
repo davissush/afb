@@ -96,7 +96,7 @@ route();
                         onclick: function(){
                                 var imgfile = $(this).data('imgfile');
 
-                                window.open('.img/'+imgfile, '_system', '');
+                                window.open('./img/'+imgfile, '_system', '');
                         }
                 });
 
