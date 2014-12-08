@@ -273,6 +273,7 @@ h1 {
   margin-top: 1.2em;
   margin-bottom: 1.2em;
   text-align: center;
+  font-weight: bold;
 }
 
 p {
@@ -326,6 +327,9 @@ body, html {
   padding-left: 0;
   padding-right: 0;
   overflow: hidden;
+}
+.content-section.full-width.result-section {
+  overflow: scroll;
 }
 
 .question-image {
@@ -630,6 +634,7 @@ section.footer {
   text-align: center;
   width: 100%;
   padding: 1em 0;
+  z-index: 99999;
 }
 section.footer .footer-button {
   line-height: 3em;

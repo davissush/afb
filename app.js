@@ -108,11 +108,13 @@ route();
 
                 $('.question-image').entwine({
                         onclick: function(){
-                                var imgfile = $(this).data('imgfile');
-								
-								alert(window.rootFS.fullPath);								
+                               var imgfile = $(this).data('imgfile');
 
-                                // window.open('../img/'+imgfile, '_system', '');
+                               var fullfilepath = window.rootFS.fullPath + '/img/' + imgfile;
+                               alert('test');
+        		       alert(window.rootFS.fullPath);
+
+                               window.open(fullfilepath, '_system', '');
                         }
                 });
 
