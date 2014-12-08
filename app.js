@@ -95,8 +95,13 @@ route();
                 $('.question-image').entwine({
                         onclick: function(){
                                 var imgfile = $(this).data('imgfile');
-
-                                window.open('./img/'+imgfile, '_system', '');
+								
+								Intent intent = new Intent();
+								intent.setAction(Intent.ACTION_VIEW);
+								intent.setDataAndType(Uri.parse('../img/'+imgfile), "image/jpeg");
+								startActivity(intent);
+																
+                                //window.open('../img/'+imgfile, '_system', '');
                         }
                 });
 
