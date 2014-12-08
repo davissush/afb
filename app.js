@@ -7,6 +7,21 @@ document.addEventListener("backbutton", function(e){
         navigator.app.backHistory();
 }, false);
 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+       console.log("device is ready");
+       window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+       window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+}
+
+function gotFS(fileSystem) {
+       console.log("got filesystem");
+       // save the file system for later access
+       console.log(fileSystem.root.fullPath);
+       window.rootFS = fileSystem.root;
+}
+	
 var slider = new PageSlider($("#container"));
 var spinner = $("#spinner");
 
@@ -94,7 +109,10 @@ route();
                 $('.question-image').entwine({
                         onclick: function(){
                                 var imgfile = $(this).data('imgfile');
-                                window.open('../img/'+imgfile, '_system', '');
+								
+								alert(window.rootFS.fullPath);								
+
+                                // window.open('../img/'+imgfile, '_system', '');
                         }
                 });
 
