@@ -132,6 +132,8 @@ route();
                                imgwidth+=20;
 
                                this.closest('.featherlight-image-content').find('.featherlight-image-inner img').width(imgwidth);
+
+                               this.blur();
                         }
                 });
 
@@ -141,6 +143,8 @@ route();
                                 imgwidth-=20;
 
                                 this.closest('.featherlight-image-content').find('.featherlight-image-inner img').width(imgwidth);
+
+                                this.blur();
                         }
                 });
 

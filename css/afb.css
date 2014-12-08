@@ -749,6 +749,17 @@ body, html {
   -webkit-tap-highlight-color: transparent;
 }
 
+.magnify.plus,
+.magnify.minus {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .featherlight-image .featherlight-image-content {
   width: 90%;
   overflow: hidden;
