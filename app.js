@@ -4,6 +4,7 @@ window.addEventListener('load', function () {
 
 document.addEventListener("backbutton", function(e){
         $('.featherlight-close-icon.featherlight-close').trigger('click');
+        $('.featherlight-image .featherlight-image-close-icon').trigger('click');
         navigator.app.backHistory();
 }, false);
 
@@ -33,8 +34,6 @@ $('.back-button').entwine({
         onclick: function(e){
                 e.preventDefault();
                 parent.history.back();
-
-                $('.featherlight-close-icon.featherlight-close').trigger('click');
         }
 });
 
