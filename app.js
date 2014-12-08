@@ -23,7 +23,6 @@ $('.back-button').entwine({
         }
 });
 
-
 function renderpage(page){
         $.ajax({
                 type: 'GET',
@@ -95,13 +94,7 @@ route();
                 $('.question-image').entwine({
                         onclick: function(){
                                 var imgfile = $(this).data('imgfile');
-								
-								Intent intent = new Intent();
-								intent.setAction(Intent.ACTION_VIEW);
-								intent.setDataAndType(Uri.parse('../img/'+imgfile), "image/jpeg");
-								startActivity(intent);
-																
-                                //window.open('../img/'+imgfile, '_system', '');
+                                window.open('../img/'+imgfile, '_system', '');
                         }
                 });
 
