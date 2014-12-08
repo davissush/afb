@@ -128,12 +128,15 @@ route();
 
                 $('.magnify.plus').entwine({
                         onclick: function(e){
+                                e.preventDefault();
                                var imgwidth = this.closest('.featherlight-image-content').find('.featherlight-image-inner img').width();
                                imgwidth+=20;
 
                                this.closest('.featherlight-image-content').find('.featherlight-image-inner img').width(imgwidth);
 
                                this.blur();
+
+                               return false;
                         }
                 });
 
@@ -145,8 +148,13 @@ route();
                                 this.closest('.featherlight-image-content').find('.featherlight-image-inner img').width(imgwidth);
 
                                 this.blur();
+
+                                return false;
                         }
                 });
+
+                $(".magnify.plus").on("touchend", function(){ return false; });
+                $(".magnify.minus").on("touchend", function(){ return false; });
 
                 $('.result-section').entwine({
                         onadd: function(){
