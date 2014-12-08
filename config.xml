@@ -106,14 +106,6 @@
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
 
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.FileUtils" />
-    </feature>
-    <feature name="FileTransfer">
-        <param name="android-package" value="org.apache.cordova.FileTransfer" />
-    </feature>
-
-
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
         <string>100</string>
     </gap:config-file>

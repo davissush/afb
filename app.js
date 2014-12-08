@@ -110,11 +110,39 @@ route();
                         onclick: function(){
                                var imgfile = $(this).data('imgfile');
 
-                               var fullfilepath = window.rootFS.fullPath + '/img/' + imgfile;
-                               alert('test');
-        		       alert(window.rootFS.fullPath);
+                               var popupImage = "<div>" +
+                                       "<div class='fcontrol'><span class='magnify plus'>+</span> <span class='magnify minus'>-</span></div>" +
+                                       "<div class='finner'>" +
+                                       "   <img src='img/" + imgfile + "'>" +
+                                       "</div>" +
+                                       "</div>";
 
-                               window.open(fullfilepath, '_system', '');
+
+                                $.featherlight(popupImage, {
+                                        namespace: 'featherlight-image',
+                                        closeOnClick: false
+                                });
+                        }
+                });
+
+
+                $('.magnify.plus').entwine({
+                        onclick: function(e){
+                               var imgwidth = this.closest('.featherlight-image-inner').find('img').width();
+
+                                imgwidth+=20;
+
+                                this.closest('.featherlight-image-inner').find('img').width(imgwidth);
+                        }
+                });
+
+                $('.magnify.minus').entwine({
+                        onclick: function(e){
+                                var imgwidth = this.closest('.featherlight-image-inner').find('img').width();
+
+                                imgwidth-=20;
+
+                                this.closest('.featherlight-image-inner').find('img').width(imgwidth);
                         }
                 });
 
