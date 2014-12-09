@@ -3,9 +3,14 @@ window.addEventListener('load', function () {
 }, false);
 
 document.addEventListener("backbutton", function(e){
-        $('.featherlight-close-icon.featherlight-close').trigger('click');
-        $('.featherlight-image .featherlight-image-close-icon').trigger('click');
-        navigator.app.backHistory();
+        var pagecode = $(this).data('pagecode');
+
+        if(pagecode != 'question1'){
+                $('.featherlight-close-icon.featherlight-close').trigger('click');
+                $('.featherlight-image .featherlight-image-close-icon').trigger('click');
+                navigator.app.backHistory();
+        }
+
 }, false);
 
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -33,7 +38,13 @@ $(window).on('hashchange', route);
 $('.back-button').entwine({
         onclick: function(e){
                 e.preventDefault();
-                parent.history.back();
+                var pagecode = $(this).data('pagecode');
+
+                if(pagecode != 'question1'){
+                        $('.featherlight-close-icon.featherlight-close').trigger('click');
+                        $('.featherlight-image .featherlight-image-close-icon').trigger('click');
+                        parent.history.back();
+                }
         }
 });
 

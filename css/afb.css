@@ -507,7 +507,7 @@ body, html {
   height: 100%;
 }
 .content-section .content-filler {
-  height: 100px;
+  height: 200px;
 }
 .content-section.full-width {
   padding-left: 0;
@@ -674,13 +674,14 @@ body, html {
 .back-button {
   display: inline-block;
   position: absolute;
-  width: 3em;
-  height: 3em;
+  width: 6em;
+  height: 6em;
   margin-left: 1em;
   margin-top: 1em;
   z-index: 99999;
-  background-size: 100% 100%;
+  background-size: 55% 55%;
   background-image: url(../img/backbutton.png);
+  background-repeat: no-repeat;
 }
 .back-button:active {
   opacity: 0.6;
@@ -764,7 +765,7 @@ body, html {
 .featherlight-image .featherlight-image-content {
   width: 90%;
   overflow: hidden;
-  height: 100%;
+  height: 95%;
   padding: 0;
   border-bottom: 2px solid transparent;
 }
@@ -850,14 +851,30 @@ body, html {
   font-size: 2em;
 }
 .fcontrol .magnify {
-  width: 1em;
+  width: 1.5em;
   display: inline-block;
   text-align: center;
   border: 1px solid orange;
   background: white;
   color: gray;
+  height: 1.2em;
+  line-height: 1.2em;
+  vertical-align: middle;
+  font-size: 1em;
+  font-weight: bold;
 }
 .fcontrol .magnify:active {
+  opacity: 0.3;
+}
+
+.featherlight-image .featherlight-image-close-icon {
+  line-height: 2em;
+  width: 2em;
+  font-size: 2em;
+  background: white;
+  color: gray;
+}
+.featherlight-image .featherlight-image-close-icon:active {
   opacity: 0.3;
 }
 
