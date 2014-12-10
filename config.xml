@@ -28,10 +28,10 @@
         id        = "com.afb"
         version   = "1.0.0">
 
-    <name>AFB App IOS</name>
+    <name>AFB App</name>
 
     <description>
-        A hybrid app for AFB - IOS
+        A hybrid app for AFB
     </description>
 
     <author href="http://www.sushmobile.co.nz" email="davis.dimalen@gmail.com">
