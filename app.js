@@ -8,26 +8,11 @@ document.addEventListener("backbutton", function(e){
         if(pagecode != 'question1'){
                 $('.featherlight-close-icon.featherlight-close').trigger('click');
                 $('.featherlight-image .featherlight-image-close-icon').trigger('click');
-                navigator.app.backHistory();
+//                navigator.app.backHistory();
         }
 
 }, false);
 
-document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady() {
-       console.log("device is ready");
-       window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
-       window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
-}
-
-function gotFS(fileSystem) {
-       console.log("got filesystem");
-       // save the file system for later access
-       console.log(fileSystem.root.fullPath);
-       window.rootFS = fileSystem.root;
-}
-	
 var slider = new PageSlider($("#container"));
 var spinner = $("#spinner");
 
@@ -77,7 +62,7 @@ function route(event) {
                 window.localStorage.setItem("q4", 0);
                 renderpage('home');
         } else {
-                renderpage(loadpage);
+               renderpage(loadpage);
         }
 
 }
@@ -113,6 +98,15 @@ route();
                                 var total = parseInt(window.localStorage.getItem("q1")) + parseInt(window.localStorage.getItem("q2")) + parseInt(window.localStorage.getItem("q3")) + parseInt(window.localStorage.getItem("q4"));
 
                                 return total;
+                        }
+                });
+
+                $('.start-diagnosis').entwine({
+                        onclick: function(){
+                                window.localStorage.setItem("q1", 0);
+                                window.localStorage.setItem("q2", 0);
+                                window.localStorage.setItem("q3", 0);
+                                window.localStorage.setItem("q4", 0);
                         }
                 });
 
@@ -179,7 +173,7 @@ route();
                                 if(parseInt(totalscore)  >= 30){
                                         score_response = "<span class='negative-stats'>Very likely</span> to have an AFB infection";
                                         score_message = "<p>In this case it is recommended that you burn the hive and report the outbreak.<br/> Instructions on how to do this can be found on the AFB Management Agency website.</p>";
-                                        score_message += "<span><a href='' class='open-browser'>www.bee.crowna.co.nz</a></span>";
+                                        score_message += "<span><a href='#' class='open-browser'>www.bee.crowna.co.nz</a></span>";
                                         score_image += "<img src='img/negative_result.png'>";
                                 } else {
                                         score_response = "<span class='positive-stats'>Unlikely</span> to have AFB";
@@ -199,6 +193,15 @@ route();
                                 self.find(".result-description").html(score_message);
                                 self.find(".result-image").html(score_image);
 
+                        }
+                });
+
+
+                $('.open-browser').entwine({
+                        onclick: function(e){
+                                e.preventDefault();
+
+                                window.open('http://www.bee.crowna.co.nz', '_system');
                         }
                 });
 
@@ -426,6 +429,5 @@ route();
                 });
 
         });
-
 
 })(jQuery);
