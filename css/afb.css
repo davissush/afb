@@ -509,6 +509,9 @@ body, html {
 .content-section .content-filler {
   height: 200px;
 }
+.content-section .content-filler.longer {
+  height: 400px;
+}
 .content-section.full-width {
   padding-left: 0;
   padding-right: 0;

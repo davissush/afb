@@ -97,6 +97,10 @@ body, html{
 
 	.content-filler{
 		height: 200px;
+
+		&.longer{
+			height: 400px;
+		}
 	}
 
 	&.full-width{
