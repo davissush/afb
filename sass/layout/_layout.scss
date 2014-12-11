@@ -541,12 +541,17 @@ body, html{
 }
 
 @media(max-height: 520px) {
-	.question-caption {
+	.question-caption {w
 		padding: .2em 2em .3em 2em;
 	}
 
 	.answer-box{
 		padding: 1em 5em 1em 5em;
 		margin-top: 0;
+	}
+
+	.question-image{
+		height: 220px;
+		overflow: hidden;
 	}
 }

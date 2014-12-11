@@ -890,6 +890,11 @@ body, html {
     padding: 1em 5em 1em 5em;
     margin-top: 0;
   }
+
+  .question-image {
+    height: 220px;
+    overflow: hidden;
+  }
 }
 header {
   height: 25px;
