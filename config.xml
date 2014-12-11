@@ -107,7 +107,7 @@
     <gap:splash src="res/screen/ios/splash@3x.png"      gap:platform="ios"     width="768" height="1024" />
 
     <preference name="SplashScreen" value="splash" />
-    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="SplashScreenDelay" value="3000" />
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
         <string>100</string>
