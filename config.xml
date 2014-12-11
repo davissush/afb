@@ -86,14 +86,6 @@
     <gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" />
     <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
 
-    <gap:config-file platform="android" parent="/manifest" mode="delete">
-        <uses-permission android:name="android.permission.RECORD_AUDIO" />
-        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    </gap:config-file>
-
-
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
     <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
