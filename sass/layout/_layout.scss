@@ -539,3 +539,14 @@ body, html{
 		opacity: 0.3;
 	}
 }
+
+@media(max-height: 520px) {
+	.question-caption {
+		padding: .2em 2em .3em 2em;
+	}
+
+	.answer-box{
+		padding: 1em 5em 1em 5em;
+		margin-top: 0;
+	}
+}

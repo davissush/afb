@@ -44,3 +44,11 @@ section.above-footer{
 		}
 	}
 }
+
+
+@media(max-height: 520px) {
+	section.footer {
+		height: 5.5em;
+		padding: 0.5em 0;
+	}
+}

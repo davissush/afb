@@ -881,6 +881,16 @@ body, html {
   opacity: 0.3;
 }
 
+@media (max-height: 520px) {
+  .question-caption {
+    padding: .2em 2em .3em 2em;
+  }
+
+  .answer-box {
+    padding: 1em 5em 1em 5em;
+    margin-top: 0;
+  }
+}
 header {
   height: 25px;
   background-color: #e89920;
@@ -924,6 +934,12 @@ section.above-footer a.show-popup:after {
   right: inherit;
 }
 
+@media (max-height: 520px) {
+  section.footer {
+    height: 5.5em;
+    padding: 0.5em 0;
+  }
+}
 .hero-image {
   width: 100%;
 }
@@ -939,4 +955,10 @@ section.above-footer a.show-popup:after {
   font-weight: bold;
   margin: 1.7em 0;
   letter-spacing: .04em;
+}
+
+@media (max-height: 520px) {
+  .hero-text {
+    margin: 1.7em 0 0 0;
+  }
 }
