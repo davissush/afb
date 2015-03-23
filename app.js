@@ -312,7 +312,7 @@ route();
                                                 window.localStorage.setItem("q2s", 1);
                                                 break;
                                         case 3:
-                                                window.localStorage.setItem("q3", 20);
+                                                window.localStorage.setItem("q3", 40);
                                                 window.localStorage.setItem("q3s", 1);
                                                 break;
                                         case 4:
@@ -475,26 +475,26 @@ route();
                                         "</div>";
 
 
-                                var info3 = "<div>" +
-                                        "  <div class='popup-title'>Instructions  <a href='#' class='custom-close-icon'>✕</a></div>" +
-                                        "  <div class='popup-container'>" +
-                                        "  <ol>" +
-                                        "     <li>Uncap any suspect cells.</li>" +
-                                        "     <li>Use a dry stick or matchstick ensuring, that the selected item has a ruff surface.</li>" +
-                                        "     <li>Insert the stick or matchstick into the suspect pupae and stir the body tissue so that it clings to whatever you are using.</li>" +
-                                        "     <li>Slowly withdraw your stick or matchstick and observe how far the pupae body tissue stretches or “ropes” out.</li>" +
-                                        "     <li>If the tissue roped out between 10-30mm then the test was positive.</li>" +
-                                        "     <li>The body tissue of AFB infected larva often “ropes out” then “snaps back”.</li>" +
-                                        "  </ol>" +
-                                        "  <div class='PopFooter'></div>" +
-                                        "</div>" +
-                                        "  <div class='popup-actions'>" +
-                                        "     <div class='popup-action left'>-" +
-                                        "     </div>" +
-                                        "     <div class='popup-action right'>+" +
-                                        "     </div>" +
-                                        "  </div>" +
-                                        "</div>";
+                            var info3 = "<div>" +
+                                "  <div class='popup-title'>Instructions  <a href='#' class='custom-close-icon'>✕</a></div>" +
+                                "  <div class='popup-container'>" +
+                                "  <ol>" +
+                                "     <li>Uncap any suspect cells.</li>" +
+                                "     <li>Use a dry stick or matchstick ensuring, that the selected item has a rough surface. If you use a matchstick, break off the red head.</li>" +
+                                "     <li>Insert the stick or matchstick into the suspect pupae and stir the body tissue so that it clings to whatever you are using.</li>" +
+                                "     <li>Slowly withdraw your stick or matchstick and observe how far the pupae body tissue stretches or “ropes” out.</li>" +
+                                "     <li>If the tissue ropes out between 10-30mm then the test was positive.</li>" +
+                                "     <li>The body tissue of AFB infected larva has a caramel type consistency and often \"ropes out\", before \"snapping back\".  It is not watery or lumpy.</li>" +
+                                "  </ol>" +
+                                "  <div class='PopFooter'></div>" +
+                                "</div>" +
+                                "  <div class='popup-actions'>" +
+                                "     <div class='popup-action left'>-" +
+                                "     </div>" +
+                                "     <div class='popup-action right'>+" +
+                                "     </div>" +
+                                "  </div>" +
+                                "</div>";
 
                                 var info4 = "<div>" +
                                         "  <div class='popup-title'>Instructions  <a href='#' class='custom-close-icon'>✕</a></div>" +
