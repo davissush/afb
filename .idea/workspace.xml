@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7af142ee-217f-4a02-8d08-12d07afbbdaf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7af142ee-217f-4a02-8d08-12d07afbbdaf" name="Default" comment="" />
     <ignored path="afb.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +26,7 @@
       <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="9" selection-start="7434" selection-end="7434" vertical-scroll-proportion="0.9481865" vertical-offset="1161" max-vertical-offset="1800">
+            <state line="114" column="9" selection-start="7434" selection-end="7434" vertical-scroll-proportion="0.8445596" vertical-offset="1221" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -257,7 +255,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="9" selection-start="7434" selection-end="7434" vertical-scroll-proportion="0.9481865" vertical-offset="1161" max-vertical-offset="1800">
+        <state line="114" column="9" selection-start="7434" selection-end="7434" vertical-scroll-proportion="0.8445596" vertical-offset="1221" max-vertical-offset="1800">
           <folding />
         </state>
       </provider>
