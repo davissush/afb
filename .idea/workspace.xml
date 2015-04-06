@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7af142ee-217f-4a02-8d08-12d07afbbdaf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="afb.iws" />
@@ -26,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="482" column="80" selection-start="25338" selection-end="25338" vertical-scroll-proportion="0.0" vertical-offset="5536" max-vertical-offset="8370">
+            <state line="114" column="9" selection-start="7434" selection-end="7434" vertical-scroll-proportion="0.9481865" vertical-offset="1161" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config.xml">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="24" selection-start="1085" selection-end="1085" vertical-scroll-proportion="-0.46341464" vertical-offset="887" max-vertical-offset="1830">
+            <state line="424" column="58" selection-start="19914" selection-end="19915" vertical-scroll-proportion="-7.423077" vertical-offset="6167" max-vertical-offset="8370">
               <folding />
             </state>
           </provider>
@@ -66,8 +65,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="3256" />
-    <option name="y" value="34" />
+    <option name="x" value="1280" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
   </component>
@@ -97,7 +96,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -130,22 +128,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="afb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="afb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,7 +152,7 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="467bbd66-669e-4d8f-99a6-98baa5e4237b" server_name="CavalierNew">
       <method />
     </configuration>
     <list size="0" />
@@ -182,15 +167,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3256" y="34" width="1920" height="1057" extended-state="6" />
+    <frame x="1280" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33056995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2539936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25878593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -222,18 +207,28 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/layout/_layout.scss">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="304" column="5" selection-start="4262" selection-end="4262" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9705">
+        <state line="482" column="80" selection-start="25338" selection-end="25338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8370">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/results.html">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="600">
+        <state line="30" column="24" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1830">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/layout/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="304" column="5" selection-start="4262" selection-end="4262" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9705" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="600" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
@@ -245,28 +240,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.38626608" vertical-offset="0" max-vertical-offset="932">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.38626608" vertical-offset="0" max-vertical-offset="932" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/layout/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="304" column="5" selection-start="4262" selection-end="4262" vertical-scroll-proportion="0.3814774" vertical-offset="4214" max-vertical-offset="9705">
-          <folding />
-        </state>
+        <state line="304" column="5" selection-start="4262" selection-end="4262" vertical-scroll-proportion="0.3814774" vertical-offset="4214" max-vertical-offset="9705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="482" column="80" selection-start="25338" selection-end="25338" vertical-scroll-proportion="0.0" vertical-offset="5536" max-vertical-offset="8370">
+        <state line="424" column="58" selection-start="19914" selection-end="19915" vertical-scroll-proportion="-7.423077" vertical-offset="6167" max-vertical-offset="8370">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="24" selection-start="1085" selection-end="1085" vertical-scroll-proportion="-0.46341464" vertical-offset="887" max-vertical-offset="1830">
+        <state line="114" column="9" selection-start="7434" selection-end="7434" vertical-scroll-proportion="0.9481865" vertical-offset="1161" max-vertical-offset="1800">
           <folding />
         </state>
       </provider>
